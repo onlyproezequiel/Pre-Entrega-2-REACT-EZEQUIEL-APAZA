@@ -1,27 +1,22 @@
+// src/components/NavBar/NavBar.jsx
+import React from 'react';
+import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
-
-import React from 'react'
-import './NavBar.css'
-
-const Navbar = () => {
+const NavBar = ({ itemCount }) => {
 return (
     <nav className="navbar">
     <div className="logo">
-        <a href="/">Mi Tienda</a>
+        <h1>Lepuchi Bazar</h1>
     </div>
     <ul className="nav-links">
         <li><a href="/">Inicio</a></li>
         <li><a href="/productos">Productos</a></li>
         <li><a href="/contacto">Contacto</a></li>
     </ul>
-    <div className="cart-widget">
-        <a href="/carrito">
-        <img src="/path/to/cart-icon.png" alt="Carrito" />
-        <span className="cart-count">0</span>
-        </a>
-    </div>
+    <CartWidget itemCount={itemCount} />
     </nav>
 );
 }
 
-export default Navbar
+export default NavBar;

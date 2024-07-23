@@ -1,12 +1,18 @@
+import React from 'react';
+import './Contenedor.css';
 import ProductCard from '../ProductCard/ProductCard';
 
-const Contenedor = ({ mensajeBienvenida, productos }) => {
+const Contenedor = ({ mensajeBienvenida, productos, updateCartItemCount }) => {
   return (
     <div className="contenedor">
-      <h1>{mensajeBienvenida}</h1>
-      <div className="catalogo">
-        {productos.map((product) => (
-          <ProductCard key={product.id} product={product} />
+      <h2>{mensajeBienvenida}</h2>
+      <div className="product-list">
+        {productos.map(producto => (
+          <ProductCard 
+            key={producto.id} 
+            product={producto} 
+            updateCartItemCount={updateCartItemCount} 
+          />
         ))}
       </div>
     </div>
