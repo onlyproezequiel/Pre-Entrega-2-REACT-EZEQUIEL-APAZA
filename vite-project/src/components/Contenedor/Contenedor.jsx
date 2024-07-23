@@ -1,6 +1,4 @@
-// src/components/Contenedor/Contenedor.jsx
-import React from 'react';
-import ProductCard from './ProductCard/ProductCard'; // Asegúrate de que esta línea coincida con la ubicación del archivo
+import ProductCard from './ProductCard/ProductCard';
 
 const Contenedor = ({ mensajeBienvenida, productos }) => {
   return (

@@ -5,9 +5,9 @@ import Contenedor from './components/Contenedor/Contenedor.jsx';
 
 const App = () => {
   const productos = [
-    { id: 1, name: 'Producto 1', description: 'Descripción del Producto 1', price: 10, image: '/path/to/image1.jpg' },
-    { id: 2, name: 'Producto 2', description: 'Descripción del Producto 2', price: 20, image: '/path/to/image2.jpg' },
-    // Agrega más productos según sea necesario
+    { id: 1, name: 'Producto 1', description: 'Descripción del Producto 1', price: 10, image: '' },
+    { id: 2, name: 'Producto 2', description: 'Descripción del Producto 2', price: 20, image: '' },
+    // Agregar más productos por falta de imaginación y tiempo
   ];
 
   return (
